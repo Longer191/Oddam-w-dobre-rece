@@ -1,0 +1,36 @@
+$main-color: #5E5322;
+.yellow-section {
+    width: 100%;
+    height:380px;
+    background: #F7CB11;
+    display:flex;
+}
+.yellow-section-flex {
+    display:flex;
+    align-items: center;
+    width: 1500px;
+    height: 300px;
+    margin:auto;
+
+}
+
+@mixin tables {
+    color: #5E5322;
+    text-align: center;
+}
+
+.number {
+    @include tables;
+    font-size: 100px;
+}
+
+.table-text {
+    @include tables;
+    font-size: 30px;
+}
+
+.table-lorem {
+    @include tables;
+    font-size: 20px;
+    margin-top: 20px;
+}

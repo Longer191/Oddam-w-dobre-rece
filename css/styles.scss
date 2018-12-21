@@ -1,3 +1,6 @@
+@import 'header';
+@import 'yellow-section';
+
 * {
     margin: 0;
     padding: 0;
@@ -7,55 +10,58 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
-.header-section {
-    width: 2064px;
-    height: 936px;
-    display:flex;
-}
-.image-section {
 
+.steps-section {
+    width:100%;
+    height:750px;
 }
-.header-image {
-    height: 100%;
-    width: 1037px;
-}
-.text-section {
-    display:flex;
-    flex-direction: column;
-    height: 773px;
-    width:826px;
-}
-.nav-up {
-    width:637px;
-    height:25px;
-    display:flex;
-    justify-content: flex-end;
-    text-decoration: none;
+.steps-section-title {
+    font-size: 30px;
+    text-align: center;
     margin-top: 50px;
-    margin-right: 193px;
-    padding-left: 20px;   
-    text-decoration: none;  
 }
 
-.hover-rec:hover {
-    border: 1px solid black;
- 
-    list-style-type: none;
-}
-.nav-down {
-    display:flex;
-}
-.nav-down-list {
-    text-decoration: none;
+.steps-section-flex{
     display:flex;
     justify-content: space-between;
-    list-style-type: none;
-    width:637px;
-    height:50px;
+    align-items: center;
+    margin:0 auto;
+    background:#EBEBEB;
+    width:1180px;
+    height:322px;
 }
-.middle-text {
 
+.sizes {
+    height: 70px;
+    width: 70px;
 }
-.down-text {
+@mixin position {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: #747474;
+}
+.hands {
+    @include position
+}
+.arrow {
+    @include position
+}
+.help {
+    @include position
+}
+.courier {
+    @include position
+}
 
+.minus {
+    background: none;
+    width: 75px;
 }
+
+
+
+
+
+
+
