@@ -1,0 +1,41 @@
+.people-section {
+    margin-top: 100px;
+    width:1900px;
+    height:966px;
+    background: #eeefef;
+    display: flex;
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 961px;
+    width: 870px;
+}
+.about-us-section {
+    height: 620px;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.about-us-text {
+    font-size: 30px;
+} img {
+    width:40%;
+    margin: 0 auto;
+}
+
+.people-image {
+    display: flex;
+    width: 1028px;
+    height: 965px;
+}
+
+.people-image-flex {
+    margin-top: 50px;
+    width: 1028px;
+    height: 856px;
+}
