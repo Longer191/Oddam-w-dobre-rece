@@ -2,6 +2,7 @@
 @import 'yellow-section';
 @import 'steps';
 @import 'people-section';
+@import 'help-section';
 
 * {
     margin: 0;
@@ -13,70 +14,67 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.help-section{
+.footer{
     width:1900px;
-    height:1054px;
-    display: flex;
-    flex-direction: column;
-}
-.help-text{
-    text-align: center;
-    font-size: 40px;
-    margin-top: 100px;
-}
-
-.three-texts {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 620px;
-    height:140px;
-    margin: 0 auto;
-    font-size: 20px;
-    padding-left: 5px;
-}
-
-.three-texts p {
-        width: 150px;
-        height: 60px;
-        text-align: center;
-        
-}
-
-.three-texts p:hover {
-    border:1px solid black;
-    vertical-align: middle;
-}
-
-.long-text{
-    width: 620px;
-    margin: 0 auto;
-    font-size: 22px;
-    text-align: justify;
-}
-
-.container{
-    width:1317px;
-    margin: 0 auto;
+    height:970px;
     display:flex;
+    background: #eeefef;
 }
-.left-side{
-    width:50%;
+.image-footer{
+    height:100%;
 }
-.inside-text{
+
+.image-footer > img {
+    height:100%;
+    width:1100px;
+}
+
+.form-section {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width:730px;
+    // justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+}
+.contact {
+    font-size: 40px;
+}
+.form {
+   width:600px;
+   height:320px;
+   display:flex;
+   flex-direction: column;
+   margin-top: 100px;
+   margin-left: 100px;
+}
+.contact-form{
+    font-size: 25px;
+    text-align: left;
+}
+.form-info{
+    display: flex;
+
+}
+.name-email{
+    display:flex;
+    justify-content: space-between;
+    width:260px;
+    border-bottom: 1px solid black;
+}
+
+.message{
+
+}
+.button {
 
 }
 
-.right-side {
-
-}
-.inside-text {
+.footer-info{
 
 }
 
-.numbers {
-
-}
 
 
 
