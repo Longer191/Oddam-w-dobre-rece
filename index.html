@@ -21,13 +21,13 @@
             <div class="nav-down">
                 <ul class="nav-down-list">
                         <li><a href="" class = "hover-rec">Start</a></li>
-                        <li><a href="" class = "hover-rec">O co chodzi?</a></li>
-                        <li><a href="" class = "hover-rec">O nas</a></li>
+                        <li><a href="#middle-text" class = "hover-rec" id = "whatIs">O co chodzi?</a></li>
+                        <li><a href="#scroll-people" class = "hover-rec" id = "aboutUs">O nas</a></li>
                         <li><a href="" class = "hover-rec">Fundacje i organizacje</a></li>
-                        <li><a href="" class = "hover-rec">Kontakt</a></li>
+                        <li><a href="#footer" class = "hover-rec" id = "contactUs">Kontakt</a></li>
                 </ul>
                 </div>
-                <div class="middle-text">
+                <div class="middle-text" id = 'scroll-about'>
                     <p>Zacznij pomagać!</p>
                     <p>Oddaj niechciane rzeczy w zaufane ręce</p>
                     <img src="./images/decoration.png" class = "decoration" alt="decoration">
@@ -93,10 +93,10 @@
             <p>Załóż konto</p>
         </div>
     </section>
-    <section class="people-section">
+    <section class="people-section" id = "scroll-people">
         <div class="about-us">
-            <div class="about-us-section">
-                <p class = "about-us-text">O nas</p>
+            <div class="about-us-section" >
+                <p class = "about-us-text" >O nas</p>
                 <img src="./images/decoration.png" alt="decoration">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptatibus omnis expedita consequuntur doloribus facilis sed esse libero, quisquam quae excepturi iusto asperiores quasi! Nemo maiores illum quod illo rem?</p>
             </div>
@@ -154,38 +154,31 @@
             <p>3</p>
         </div>
     </section>
-    <section class="footer">
+    <section class="footer" id = "scroll-footer">
         <div class="image-footer">
             <img src="./images/footer_bg_img.jpg" alt="footer" srcset="">
         </div>
         <div class="form-section">
-            <div class="contact">
-                <p>Skontaktuj się z nami</p>
-                <img src="./images/decoration.png" alt="" srcset="">
-            </div>
-            <div class="form">
-                <p class="contact-form">
-                    Formularz kontaktowy
-                </p>
-                <div class="form-info">
-                    <div class="name-email">
-                        <p>Imię</p>
-                        <p>Email</p>
-                    </div>
-                    <p class="message">Wiadomość</p>
+            <p class = "contact">Skontaktuj się z nami</p>
+            <img src="./images/decoration.png" alt="" class='decor'>
+            <p class = "contact-form">Formularz kontaktowy</p>
+            <form action="" class="form" id='registration_form'>
+                <div class="name-email">
+                        <input type="text" placeholder="Imię" id="form_username">
+                        <input type="email" placeholder="Email" id="form_email">
                 </div>
-                <p class="button">
-                    Wyślij
-                </p>
-            </div>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Wiadomość" class = "message-form" id="form_message"></textarea>
+                <input type="submit" value="Wyślij" class = "send-button">
+            </form>
+            <div class="icons">
+                    <p class = "copyright"> Copyright 2015 &copy; by Anna Dadej</p>
+                    <img src="./images/facebook-f-brands.svg" alt="" class="s">
+                    <img src="./images/instagram-brands.svg" alt="" srcset="">
+                </div>
         </div>
-        <!-- <div class="footer-info">
-            <p>Copyright 2015 &#9400; by Anna Dadej</p>
-            <img src="./images/facebook-f-brands.svg" alt="" srcset="">
-            <img src="./images/instagram-brands.svg" alt="" srcset="">
-        </div> -->
+        
     </section>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>

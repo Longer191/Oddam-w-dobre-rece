@@ -26,53 +26,79 @@ body {
 
 .image-footer > img {
     height:100%;
-    width:1100px;
+    width:1000px;
 }
 
 .form-section {
     display:flex;
     flex-direction: column;
     height: 100%;
-    width:730px;
-    // justify-content: center;
-    text-align: center;
-    margin-top: 200px;
+    width:800px;
 }
 .contact {
     font-size: 40px;
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.contact-form {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 75px;
+    text-align: left;
+    margin-left: 5px;
 }
 .form {
-   width:600px;
-   height:320px;
-   display:flex;
-   flex-direction: column;
-   margin-top: 100px;
-   margin-left: 100px;
-}
-.contact-form{
-    font-size: 25px;
-    text-align: left;
-}
-.form-info{
     display: flex;
-
+    flex-direction: column;
+    width:650px;
 }
-.name-email{
-    display:flex;
+.name-email {
+    display: flex;
     justify-content: space-between;
-    width:260px;
+    margin-top: 50px;
+} input {
+    width:250px;
+    border: none;
     border-bottom: 1px solid black;
+    background: transparent;
+    font-size: 18px;
+    border-spacing: 10px;
+    height: 50px;
+}
+.message-form {
+    width:100%;
+    border:none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    font-size: 18px;
+    height:50px;
+    margin-top: 50px;
+    text-align: unset;
+}
+.send-button {
+    margin: 0 auto;
+    margin-top: 50px;
+    border:1px solid black;
+    height:50px;
+    width: 100px;
 }
 
-.message{
-
+.icons {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height:500px;
+    padding-left: 50px;
 }
-.button {
 
-}
-
-.footer-info{
-
+.icons img {
+    height:50px;
+    width:50px;
+    border: 1px solid black;
+    float: left;
 }
 
 
