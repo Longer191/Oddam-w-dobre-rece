@@ -25,28 +25,4 @@ $(document).ready(function (){
 });
 
 //walidacja formularza
-const validateButton = document.querySelector('.send-button')
-console.log(validateButton);
 
-validateButton.addEventListener('click', function(e) {
-    var nameForm = document.querySelector('#form_username');
-    if (nameForm.value === "") {
-        e.preventDefault();
-        alert('Proszę podaj swoje imię');
-    } else {
-        nameForm.setCustomValidity('');
-    }
-})
-
-// var button = document.getElementById('button');
-
-// button.addEventListener('click', function(e) {
-//     var textBox = document.getElementById('textBox');
-
-//     if (textBox.value !== 'TEST') {
-//         e.preventDefault();
-//         textBox.setCustomValidity('Powinieneś napisać TEST!');
-//     } else {
-//         textBox.setCustomValidity('');
-//     }
-// });

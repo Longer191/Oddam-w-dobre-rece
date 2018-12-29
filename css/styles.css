@@ -543,9 +543,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 50px;
 }
 
@@ -557,6 +558,10 @@ input {
   font-size: 18px;
   border-spacing: 10px;
   height: 50px;
+}
+
+#form_email {
+  margin-top: 30px;
 }
 
 .message-form {

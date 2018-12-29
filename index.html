@@ -164,8 +164,8 @@
             <p class = "contact-form">Formularz kontaktowy</p>
             <form action="" class="form" id='registration_form'>
                 <div class="name-email">
-                        <input type="text" placeholder="Imię" id="form_username">
-                        <input type="email" placeholder="Email" id="form_email">
+                        <input type="text" placeholder="Imię" id="form_username" name = "name">
+                        <input type="email" placeholder="Email" id="form_email" name="email">
                 </div>
                 <textarea name="message" id="" cols="30" rows="10" placeholder="Wiadomość" class = "message-form" id="form_message"></textarea>
                 <input type="submit" value="Wyślij" class = "send-button">
@@ -179,6 +179,8 @@
         
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+    <script src="./js/validation.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>
