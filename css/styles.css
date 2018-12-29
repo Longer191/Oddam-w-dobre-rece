@@ -467,17 +467,6 @@ img {
   border: 1px solid black;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
 .footer {
   width: 1900px;
   height: 970px;
@@ -602,5 +591,16 @@ input {
   width: 50px;
   border: 1px solid black;
   float: left;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 /*# sourceMappingURL=styles.css.map */
