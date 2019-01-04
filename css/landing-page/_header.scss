@@ -1,5 +1,5 @@
 .header-section {
-    width: 1900px;
+    width: 1500px;
     height: 936px;
     display:flex;
 }
@@ -18,24 +18,27 @@
 }
 .nav-up {
     width:637px;
-    height:35px;
     display:flex;
     justify-content: flex-end;
     margin-top: 50px;
     margin-right: 193px;
-} a {
     text-decoration: none;
     padding-left: 30px;
     font-size: 15px;
+} .nav-up a {
+    text-decoration: none;
+    color:inherit;
+    padding-left: 20px;
 }
 
 .hover-rec:hover {
     border: 1px solid black;
     list-style-type: none;
     text-align: center;
+    padding:10px;
 }
 .nav-down {
-    margin-top: 20px;
+    margin-top: 40px;
     display:flex;
 }
 .nav-down-list {
@@ -44,6 +47,9 @@
     list-style-type: none;
     width:637px;
     height:300px;
+} .nav-down-list a {
+    text-decoration: none;
+    color:inherit;
 }
 .middle-text {
     width:700px;
@@ -58,11 +64,13 @@
     width:700px;
     height: 300px;
     align-items: center;
-} .middle-text-p {
+} .middle-text-a {
     display:flex;
     flex-direction: column;
     border: 1px solid black;
     margin-left: 20px;
     word-spacing: 100vw;
     text-align:center;
+    text-decoration: none;
+    color:inherit;
 }

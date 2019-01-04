@@ -18,6 +18,10 @@
     flex-direction: column;
     height: 100%;
     width:800px;
+} .form-section img {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 .contact {
     font-size: 40px;
@@ -85,5 +89,4 @@
     height:50px;
     width:50px;
     border: 1px solid black;
-    float: left;
 }

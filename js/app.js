@@ -24,5 +24,12 @@ $(document).ready(function (){
     });
 });
 
-//walidacja formularza
+$(document).ready(function (){
+    $("#foundationList").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#scroll-help").offset().top
+        }, 1000);
+    });
+});
 
+//walidacja formularza

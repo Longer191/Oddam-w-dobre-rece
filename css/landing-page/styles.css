@@ -1,5 +1,5 @@
 .header-section {
-  width: 1900px;
+  width: 1500px;
   height: 936px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,7 +25,6 @@
 
 .nav-up {
   width: 637px;
-  height: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,22 +33,26 @@
           justify-content: flex-end;
   margin-top: 50px;
   margin-right: 193px;
-}
-
-a {
   text-decoration: none;
   padding-left: 30px;
   font-size: 15px;
+}
+
+.nav-up a {
+  text-decoration: none;
+  color: inherit;
+  padding-left: 20px;
 }
 
 .hover-rec:hover {
   border: 1px solid black;
   list-style-type: none;
   text-align: center;
+  padding: 10px;
 }
 
 .nav-down {
-  margin-top: 20px;
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,6 +68,11 @@ a {
   list-style-type: none;
   width: 637px;
   height: 300px;
+}
+
+.nav-down-list a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .middle-text {
@@ -89,7 +97,7 @@ a {
           align-items: center;
 }
 
-.middle-text-p {
+.middle-text-a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,6 +109,8 @@ a {
   margin-left: 20px;
   word-spacing: 100vw;
   text-align: center;
+  text-decoration: none;
+  color: inherit;
 }
 
 .yellow-section {
@@ -278,8 +288,6 @@ a {
 }
 
 .account {
-  width: 350px;
-  height: 150px;
   font-size: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,12 +296,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid black;
-  margin-top: 100px;
+  margin-top: 50px;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
 }
 
-p {
-  margin: 0 auto;
+.account a:hover {
+  border: 2px solid black;
 }
 
 .people-section {
@@ -333,13 +343,28 @@ p {
   margin-top: 150px;
 }
 
-.about-us-text {
-  font-size: 30px;
-}
-
-img {
+.about-us-section img {
   width: 40%;
   margin: 0 auto;
+}
+
+.about-us-section .signature {
+  width: 40%;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.about-us-text {
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.about-us-long-text {
+  width: 500px;
+  font-size: 25px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: justify;
 }
 
 .people-image {
@@ -497,6 +522,12 @@ img {
   width: 800px;
 }
 
+.form-section img {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
 .contact {
   font-size: 40px;
   font-weight: bold;
@@ -590,7 +621,6 @@ input {
   height: 50px;
   width: 50px;
   border: 1px solid black;
-  float: left;
 }
 
 * {

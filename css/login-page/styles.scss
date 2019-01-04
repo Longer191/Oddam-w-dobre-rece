@@ -1,83 +1,70 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border border-box;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.header-section {
-    width: 1900px;
-    height: 936px;
-    display:flex;
-}
-.image-section {
-
-}
-.header-image {
-    height: 100%;
-    width: 10%;
-    visibility: hidden;
-}
-.text-section {
-    display:flex;
-    flex-direction: column;
-    height: 773px;
-    width:90%;
-}
 .nav-up {
-    width:637px;
-    height:35px;
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 200px;
+} .nav-up a {
+    padding-left: 75px;
+    text-decoration: none;
+    color:inherit;
+}
+
+.nav-down {
+    list-style: none;
     display:flex;
     justify-content: flex-end;
     margin-top: 50px;
-    margin-right: 193px;
-} a {
+    margin-right: 200px;
+} .nav-down a {
     text-decoration: none;
-    padding-left: 30px;
-    font-size: 15px;
+    color:inherit;
+    padding-left: 75px;
 }
 
-.hover-rec:hover {
-    border: 1px solid black;
-    list-style-type: none;
-    text-align: center;
-}
-.nav-down {
-    margin-top: 20px;
+.login {
     display:flex;
-}
-.nav-down-list {
-    display:flex;
-    justify-content: space-between;
-    list-style-type: none;
-    width:637px;
-    height:300px;
-}
-.login-text{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 700px;
+    margin-top: 50px;
+} .login p:first-child {
+    margin:0 auto;
+    font-size: 50px;
+} .login img {
+    width:20%;
+    margin:0 auto;
+    margin-top: 10px;
 }
-.login-font{
-    font-size: 30px;
-    text-align: center;
-}
+
 input {
-    width: 100%;
-    font-size: 20px;
+    width:600px;
+    margin: 0 auto;
     border: none;
     border-bottom: 1px solid black;
-    margin-top: 25px;
-}
-.login-buttons{
-    margin-top: 25px;
-    display: flex;
-    justify-content: space-between;
-    width:80%;
-    margin-left: 50px;
+    background: transparent;
+    font-size: 30px;
+    margin-top: 75px;
+    padding-bottom: 15px;
 }
 
+.login-buttons {
+    width:500px;
+    display:flex;
+    justify-content: space-between;
+    margin:0 auto;
+} .login-buttons a {
+    text-decoration: none;
+    color:inherit;
+    padding: 15px;
+}
+
+.login-buttons a:hover {
+    border: 1px solid black;
+}

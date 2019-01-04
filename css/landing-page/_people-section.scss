@@ -19,13 +19,26 @@
     display: flex;
     flex-direction: column;
     margin-top: 150px;
+} .about-us-section img {
+    width:40%;
+    margin:0 auto;
+} .about-us-section .signature {
+    width:40%;
+    margin-right: 50px;
+    margin-top: 50px;
 }
 
 .about-us-text {
     font-size: 30px;
-} img {
-    width:40%;
     margin: 0 auto;
+}
+
+.about-us-long-text {
+    width: 500px;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: justify;
 }
 
 .people-image {
