@@ -41,14 +41,13 @@
 .nav-up a {
   text-decoration: none;
   color: inherit;
-  padding-left: 20px;
+  padding: 10px;
 }
 
 .hover-rec:hover {
   border: 1px solid black;
   list-style-type: none;
   text-align: center;
-  padding: 10px;
 }
 
 .nav-down {
@@ -73,6 +72,7 @@
 .nav-down-list a {
   text-decoration: none;
   color: inherit;
+  padding: 10px;
 }
 
 .middle-text {
@@ -404,29 +404,28 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 620px;
+  width: 820px;
   height: 140px;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 18px;
   padding-left: 5px;
 }
 
 .three-texts p {
-  width: 150px;
-  height: 60px;
   text-align: center;
+  padding: 25px;
 }
 
 .three-texts p:hover {
   border: 1px solid black;
-  vertical-align: middle;
-  border-spacing: 10px 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .long-text {
@@ -434,6 +433,14 @@
   margin: 0 auto;
   font-size: 22px;
   text-align: justify;
+}
+
+.long-text-visible {
+  visibility: visible;
+}
+
+.long-text-hidden {
+  display: none;
 }
 
 .container {

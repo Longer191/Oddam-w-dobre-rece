@@ -13,25 +13,23 @@
 
 .three-texts {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 620px;
+    width: 820px;
     height:140px;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 5px;
 }
 
 .three-texts p {
-        width: 150px;
-        height: 60px;
         text-align: center;
+        padding: 25px;
 }
 
 .three-texts p:hover {
     border:1px solid black;
-    vertical-align: middle;
-    border-spacing: 10px 10px;
+    transition: 1s;
 }
 
 .long-text{
@@ -39,6 +37,14 @@
     margin: 0 auto;
     font-size: 22px;
     text-align: justify;
+}
+
+.long-text-visible {
+    visibility: visible;
+}
+
+.long-text-hidden {
+    display:none;
 }
 .container{
     width:1317px;
