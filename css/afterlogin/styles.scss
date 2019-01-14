@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-section {
+    width: 1500px;
+    height: 936px;
+    display:flex;
+}
+.image-section {
+
+}
+.header-image {
+    height: 100%;
+    width:220%;
+}
+.text-section {
+    display:flex;
+    flex-direction: column;
+    height: 773px;
+    width:826px;
+}
+.nav-up {
+    width:637px;
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-right: 193px;
+    text-decoration: none;
+    padding-left: 30px;
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+} .nav-up a {
+    text-decoration: none;
+    color:inherit;
+    // padding-left: 20px;
+    padding:10px;
+}
+.drop-flex {
+    display:flex;
+    float: right;
+}
+.dropbtn {
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: inherit;
+
+}
+
+.rocket {
+    width: 25px;
+    height:25px;
+    margin-top: 10px;
+}
+.rocket:hover {
+    background: yellow;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+right:0;
+margin-top: 50px;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+.hover-rec:hover {
+    border: 1px solid black;
+    list-style-type: none;
+    text-align: center;
+}
+.nav-down {
+    margin-top: 40px;
+    display:flex;
+}
+.nav-down-list {
+    display:flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width:637px;
+    height:100px;
+} .nav-down-list a {
+    text-decoration: none;
+    color:inherit;
+    padding:10px;
+}
+.middle-text {
+    width:700px;
+    height:150px;
+    font-size: 35px;
+    text-align: center;
+    align-items: center;
+    color:inherit;
+}
+
+.down-text {
+    display: flex;
+    flex-direction: column;
+    width:700px;
+}
+
+.down-text > p:first-child {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.four-diamonds {
+    margin-top: 100px;
+    display:flex;
+    justify-content: center;
+}
+
+.four-diamonds p {
+    transform: rotate(-45deg)
+}
+
+.number-font {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.text-font {
+    font-size: 20px;
+    width: 50px;
+}
+
+.first-diamond,
+.second-diamond,
+.third-diamond,
+.fourth-diamond {
+    width:150px;
+    height:150px;
+    border:1px solid black;
+    transform: rotate(45deg);
+    margin-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="./css/landing-page/styles.css">
+    <link rel="stylesheet" href="./css/afterlogin/styles.css">
     <title>Witaj Michał!</title>
 </head>
 <body>
     <section class="header-section">
         <div class="image-section">
-            <img src="./images/ekran-po-zalogowaniu.png" class = "header-image" alt="header-start" srcset="">
+            <img src="/images/ekran-po-zalogowaniu.png" class = "header-image" alt="header-start" srcset="">
         </div>
         <div class="text-section">
             <div class="nav-up">
-                <a href="login.html" class = "hover-rec">Zaloguj</a>
-                <a href="register.html" class = "hover-rec">Załóż konto</a>
+                <div class="drop-flex">
+                    <button class="dropbtn">Witaj Michał</button>
+                    <!-- <img src="./images/rocketchat-brands.svg" class = 'rocket' alt="" srcset=""> -->
+                </div>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Profil</a>
+                    <a href="#">Ustawienia</a>
+                    <a href="#">Moje zbiórki</a>
+                    <a href="#">Wyloguj</a>
+                  </div>
             </div>
             <div class="nav-down">
                 <ul class="nav-down-list">
@@ -28,15 +36,34 @@
                 </ul>
                 </div>
                 <div class="middle-text" id = 'scroll-about'>
-                    <p>Zacznij pomagać!</p>
-                    <p>Oddaj niechciane rzeczy w zaufane ręce</p>
+                    <p>Oddaj rzeczy których już nie chcesz</p>
+                    <p>POTRZEBUJĄCYM</p>
                     <img src="./images/decoration.png" class = "decoration" alt="decoration">
                 </div>
                 <div class="down-text">
-                    <a href="register.html" class = "middle-text-a">Oddaj rzeczy</a>
-                    <a href="register.html" class = "middle-text-a">Zorganizuj zbiórkę</a>
+                    <p>Wystarczą cztery proste kroki:</p>
+                    <div class = "four-diamonds">
+                        <div class="first-diamond">
+                            <p class='number-font'>1</p>
+                            <p>Wybierz rzeczy</p>
+                        </div>
+                        <div class="second-diamond">
+                            <p class='number-font'>2</p>
+                            <p>Spakuj je do worka</p>
+                        </div>
+                        <div class="third-diamond">
+                            <p class='number-font'>3</p>
+                            <p>Wybierz fundację</p>
+                        </div>
+                        <div class="fourth-diamond">
+                            <p class='number-font'>4</p>
+                            <p>Zamów kuriera</p>
+                        </div>
+                    </div>
                 </div>
         </div>
 </section>
+
+<script src="./js/afterlogin.js"></script>
 </body>
 </html>
