@@ -150,11 +150,6 @@ display: block;
     margin-bottom: 20px;
 }
 
-.text-font {
-    font-size: 20px;
-    width: 50px;
-}
-
 .first-diamond,
 .second-diamond,
 .third-diamond,
@@ -165,6 +160,125 @@ display: block;
     transform: rotate(45deg);
     margin-right: 30px;
 }
+
+.yellow-section {
+    width:100%;
+    height:150px;
+    background: #F7CB11;
+    display:flex;
+}
+
+.yellow-section-text {
+    width:1200px;
+    height:100%;
+    margin:0 auto;
+    vertical-align: middle;
+    display:flex;
+    flex-direction: column;
+} .yellow-section-text > p:first-child {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.pick-item {
+    width:100%;
+    height:600px;
+    display:flex;
+}
+
+.pickup-text {
+    display: flex;
+    flex-direction: column;
+    width:830px;
+    height:650px;
+    display: flex;
+    margin-left: 150px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.pickup-text > p:nth-child(2) {
+    font-size:30px;
+    margin-top: 20px; 
+}
+
+.pick-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=checkbox] + label {
+display: block;
+margin: 0.2em;
+cursor: pointer;
+padding: 0.2em;
+}
+
+input[type=checkbox] {
+display: none;
+}
+
+input[type=checkbox] + label:before {
+content: "\2714";
+border: 0.1em solid #000;
+border-radius: 0.2em;
+display: inline-block;
+width: 1em;
+height: 1em;
+padding-left: 0.2em;
+padding-bottom: 0.3em;
+margin-right: 0.2em;
+vertical-align: bottom;
+color: transparent;
+transition: .2s;
+margin-top: 25px;
+}
+
+input[type=checkbox] + label:active:before {
+transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+background-color: #F7CB11;
+border-color: #F7CB11;
+color: #fff;
+}
+
+input[type=checkbox]:disabled + label:before {
+transform: scale(1);
+border-color: #aaa;
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+transform: scale(1);
+background-color: #bfb;
+border-color: #bfb;
+}
+
+.pickup-text button {
+    margin-top: 30px;
+    width:15%;
+    border:none;
+    background-color: transparent;
+    padding:20px;
+    border: 1px solid black;
+    font-size: 20px;
+}
+.pickup-text button:hover {
+    cursor: pointer;
+    background-color: #F7CB11;
+    border-color: #F7CB11;
+    color:white;
+    transition: .2s;
+}
+
+.bear-image {
+
+}
+
+@import '../landing-page/footer';
 
 
 
