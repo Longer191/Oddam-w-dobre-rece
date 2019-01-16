@@ -74,8 +74,8 @@ changeFoundationTwo.addEventListener('click', () => {
 changeFoundationThree.addEventListener('click', () => {
     textToChange.innerHTML = 'Wspieramy lokalne zbiórki organizowane przez indywidualne osoby, którym zależy na dobru społeczności, w której żyją. Sam też możesz zorganizować taką zbiórkę i pomóc tym, którzy są najbliżej.',
     nameToChange[0].innerHTML = 
-    `<p class = "inside-text-font">Zbióra  “Zdrowie jest istotne”</p>
-    <p>Cel i misja: Pomoc osobom w kultywowaniu zdrowego trybu życia.</p>
+    `<p class = "inside-text-font">Zbióra dla dzieci z domów dziecka</p>
+    <p>Cel i misja: Pomoc dzieciom z domów dziecka poprzez dostarczenie produktów codziennego użycia.</p>
     <p class = 'display-none'>sadas</p>`,
     nameToChange[1].innerHTML = 
     `<p class = "inside-text-font">Zbiórka  “Lorem ipsum”</p>

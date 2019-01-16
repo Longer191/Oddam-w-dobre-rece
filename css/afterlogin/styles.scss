@@ -241,28 +241,23 @@ color: transparent;
 transition: .2s;
 margin-top: 25px;
 }
-
 input[type=checkbox] + label:active:before {
 transform: scale(0);
 }
-
 input[type=checkbox]:checked + label:before {
 background-color: #F7CB11;
 border-color: #F7CB11;
 color: #fff;
 }
-
 input[type=checkbox]:disabled + label:before {
 transform: scale(1);
 border-color: #aaa;
 }
-
 input[type=checkbox]:checked:disabled + label:before {
 transform: scale(1);
 background-color: #bfb;
 border-color: #bfb;
 }
-
 .pickup-text button {
     margin-top: 30px;
     width:15%;
@@ -279,15 +274,12 @@ border-color: #bfb;
     color:white;
     transition: .2s;
 }
-
 .step1 {
     display:none
 }
-
 .bear-image {
     margin-left: 20px;
 }
-
 ul {
     list-style: none;
 }
@@ -295,7 +287,6 @@ ul {
 h2 {
     margin-top: 20px;
 }
-
 .numbers-bags {
    margin-top: 20px;
 } select {
@@ -308,7 +299,6 @@ h2 {
 .step3{
     display:flex;
 }
-
 .margin {
     margin-top: 20px;
     font-weight: bold;
@@ -318,9 +308,8 @@ h2 {
     width:60%;
     display:flex;
     justify-content: space-between;
-    
-}
 
+}
 .three-options > p, .two-options > p {
     padding:15px;
     text-align: center;
@@ -336,8 +325,67 @@ textarea {
     width: 50%;
     resize:none;
 }
+
+.inside-text {
+    width:75%;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+.aim-org{
+    font-size: 15px;
+    margin-left: 40px;
+    padding-bottom: 20px;
+}
+
+.step5-content-flex {
+    display:flex;
+}
+
+h3 {
+    margin-top: 25px;
+}
+.adress-box, .date-box {
+    width:300px;
+    height:300px;
+}
+
+.adress-box input, .date-box input {
+    width: 90%;
+    height:50px;
+    border: 1px solid black;
+}
+
+
+.street {
+
+}
+
+.postal {
+
+}
+
+.telephone {
+
+}
+
+.date {
+
+}
+
+.date-of-reception{
+
+}
+
+.time {
+
+}
+
+.courier-text {
+
+}
+
 .footer{
-    margin-top: 100px;
+    margin-top: 175px;
     width:100%;
     height:970px;
     display:flex;
@@ -415,7 +463,6 @@ textarea {
     height:50px;
     width: 100px;
 }
-
 .icons {
     display:flex;
     justify-content: space-evenly;
@@ -423,7 +470,6 @@ textarea {
     height:500px;
     padding-left: 50px;
 }
-
 .icons img {
     height:50px;
     width:50px;

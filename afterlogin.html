@@ -24,7 +24,7 @@
                     <a href="#">Profil</a>
                     <a href="#">Ustawienia</a>
                     <a href="#">Moje zbiórki</a>
-                    <a href="#">Wyloguj</a>
+                    <a href="./login.html">Wyloguj</a>
                   </div>
             </div>
             <div class="nav-down">
@@ -73,7 +73,6 @@
     <section class='pick-item'>
         <div class="pickup-text"> 
             <ul class = 'text-slider'>
-
             <li class="slide step1">
             <p class='steps'>Krok 1/4</p>
             <h2 class = "instruct-to-change">Zaznacz co chcesz oddać: </h2>
@@ -89,7 +88,6 @@
                 <input type="checkbox" id="checkbox-5">
                 <label for="checkbox-5">inne</label>
             </form>
-            
         </li>
             <li class="slide step2">
                 <p>Krok 2/4</p>
@@ -104,7 +102,6 @@
                             <option value="4">4</option>
                         </select>
                 </form>
-            
             </li>
             <li class="slide step3">
                 <p>Krok 3/4</p>
@@ -131,6 +128,73 @@
                 <p class = 'margin'>Wpisz nazwę konkretnej organizacji (opcjonalnie)</p>
                 <textarea name="optional" id="" cols="30" rows="10"></textarea>
             </li>
+            <li class="slide step4">
+                    <p>Krok 3/4</p>
+                    <h2>Wybierz organizację której chcesz pomóc:</h2>
+                <div class="list-organisations">
+                        <div class="inside-text">
+                                <input type="checkbox" id="checkbox-7">
+                                <label class = "inside-text-font" for="checkbox-7">Fundacja  “Bez domu” </label>
+                                <p class = "aim-org">Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania</p>
+                        </div>
+                        <div class="inside-text">
+                                <input type="checkbox" id="checkbox-8">
+                                <label class = "inside-text-font" for="checkbox-8">Fundacja  “Dla dzieci”</label>
+                                <p class = "aim-org">Cel i misja: Pomoc zieciom z ubogich rodzin.</p>
+                            </div>
+                            <div class="inside-text">
+                                    <input type="checkbox" id="checkbox-9">
+                                    <label class = "inside-text-font" for="checkbox-9">Organizacja  “Zdrowie jest istotne”</label>
+                                    <p class = "aim-org">Cel i misja: Pomoc osobom w kultywowaniu zdrowego trybu życia.</p>
+                                </div>
+                                <div class="inside-text">
+                                        <input type="checkbox" id="checkbox-10">
+                                        <label class = "inside-text-font" for="checkbox-10">Zbióra dla dzieci z domów dziecka</label>
+                                        <p class = "aim-org">Cel i misja: Pomoc dzieciom z domów dziecka poprzez dostarczenie produktów codziennego użycia.</p>
+                                    </div>
+                </div>
+                </li>
+                <li class="slide step5">
+                        <p class='steps'>Krok 4/4</p>
+                        <h2 class = "instruct-to-change">Podaj adres oraz termin odbioru rzeczy przez kuriera </h2>
+                        <div class="step5-content-flex">
+                        <div class="adress-box">
+                            <h3>Adres odbioru</h3>
+                            <div class="street">
+                                    <label for="street">Ulica</label>
+                                    <input type="text" name="street" id="street" value="">
+                            </div>
+                            <div class="street">
+                                    <label for="city">Miasto</label>
+                                    <input type="text" name="city" id="city" value="">
+                            </div>
+                            <div class="postal">
+                                    <label for="postal">Kod pocztowy</label>
+                                    <input type="number" name="postal" id="postal" value="">
+                            </div>
+                            <div class="telephone">
+                                    <label for="telephone">Numer telefonu</label>
+                                    <input type="tel" name="telephone" id="telephone" value="">
+                            </div>
+                        </div>
+                        <div class="date-box">
+                            <h3>Termin odbioru</h3>
+                            <div class="date-of-reception">
+                                    <label for="date">Data</label>
+                                    <input type="date" name="date" id="date" value="">
+                            </div>
+                            <div class="time">
+                                    <label for="date">Godzina</label>
+                                    <input type="time" name="date" id="date" value="">
+                            </div>
+                            <div class="courier-text">
+                                    <label for="date">Uwagi dla kuriera</label>
+                                    <textarea name="comment" id="comment" cols="30" rows="10" class = "comment" id="form_message"></textarea>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    </li>
         </ul>
         <div class="flex-btns">
                 <button class='prevBtn'>Wstecz</button>
@@ -142,7 +206,7 @@
         </div>
     </section>
 
-    <!-- <section class="footer" id = "scroll-footer">
+    <section class="footer" id = "scroll-footer">
             <div class="image-footer">
                 <img src="./images/footer_bg_img.jpg" alt="footer" srcset="">
             </div>
@@ -164,7 +228,7 @@
                         <img src="./images/instagram-brands.svg" alt="" srcset="">
                     </div>
             </div>
-        </section> -->
+        </section>
     </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>

@@ -423,8 +423,41 @@ textarea {
   resize: none;
 }
 
+.inside-text {
+  width: 75%;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.aim-org {
+  font-size: 15px;
+  margin-left: 40px;
+  padding-bottom: 20px;
+}
+
+.step5-content-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h3 {
+  margin-top: 25px;
+}
+
+.adress-box, .date-box {
+  width: 300px;
+  height: 300px;
+}
+
+.adress-box input, .date-box input {
+  width: 90%;
+  height: 50px;
+  border: 1px solid black;
+}
+
 .footer {
-  margin-top: 100px;
+  margin-top: 175px;
   width: 100%;
   height: 970px;
   display: -webkit-box;
