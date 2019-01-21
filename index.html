@@ -6,20 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="./css/landing-page/styles.css">
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
     <title>Oddam w dobre ręce</title>
 </head>
 <body>
     <div class="content">
     <section class="header-section">
-        <div class="image-section">
+        <div class="image-section"  data-sal-duration="1000" data-sal="slide-right" data-sal-easing="ease-out-bounce">
             <img src="./images/header_start_img.jpg" class = "header-image" alt="header-start" srcset="">
         </div>
-        <div class="text-section">
+        <div class="text-section" data-sal-duration="1000" data-sal="slide-left" data-sal-easing="ease-out-bounce">
             <div class="nav-up">
                 <a href="login.html" class = "hover-rec">Zaloguj</a>
                 <a href="register.html" class = "hover-rec">Załóż konto</a>
             </div>
-            <div class="nav-down">
+            <div class="nav-down" >
                 <ul class="nav-down-list">
                         <li><a href="" class = "hover-rec">Start</a></li>
                         <li><a href="#middle-text" class = "hover-rec" id = "whatIs">O co chodzi?</a></li>
@@ -40,7 +41,7 @@
         </div>
 </section>
     <section class="yellow-section">
-        <div class="yellow-section-flex">
+        <div class="yellow-section-flex" data-sal-duration="1000" data-sal="slide-up" data-sal-easing="ease-out-bounce">
             <div class="first-table">
                 <p class="number">10</p>
                 <p class="table-text">Oddanych worków</p>
@@ -58,7 +59,7 @@
             </div>
         </div>
     </section>
-    <section class="steps-section">
+    <section class="steps-section" data-sal-duration="1000" data-sal="slide-up" data-sal-easing="ease-out-bounce">
         <div class="steps-section-title">
             <p>Wystarczą 4 proste kroki</p>
             <img src="./images/decoration.png" alt="decoration">
@@ -96,18 +97,18 @@
     </section>
     <section class="people-section" id = "scroll-people">
         <div class="about-us">
-            <div class="about-us-section" >
+            <div class="about-us-section" data-sal-duration="1000" data-sal="slide-right" data-sal-easing="ease-out-bounce">
                 <p class = "about-us-text" >O nas</p>
                 <img src="./images/decoration.png" alt="decoration">
                 <p class='about-us-long-text'>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
                 <img src="./images/signature.png" alt="signature" srcset="" class='signature'>
             </div>
         </div>
-        <div class="people-image">
+        <div class="people-image" data-sal-duration="1000" data-sal="slide-left" data-sal-easing="ease-out-bounce">
             <img src="./images/about.jpg" class = "people-image-flex"alt="" srcset="">
         </div>
     </section>
-    <section class="help-section" id ="scroll-help">
+    <section class="help-section" id ="scroll-help" data-sal-duration="1000" data-sal="slide-up" data-sal-easing="ease-out-bounce">
         <div class="help-text">
             <p>Komu pomagamy?</p>
             <img src="./images/decoration.png" alt="" srcset="">
@@ -161,10 +162,10 @@
 
     </section>
     <section class="footer" id = "scroll-footer">
-        <div class="image-footer">
+        <div class="image-footer" data-sal-duration="1000" data-sal="slide-right" data-sal-easing="ease-out-bounce">
             <img src="./images/footer_bg_img.jpg" alt="footer" srcset="">
         </div>
-        <div class="form-section">
+        <div class="form-section" data-sal-duration="1000" data-sal="slide-left" data-sal-easing="ease-out-bounce">
             <p class = "contact">Skontaktuj się z nami</p>
             <img src="./images/decoration.png" alt="" class='decor'>
             <p class = "contact-form">Formularz kontaktowy</p>
@@ -184,9 +185,13 @@
         </div>
     </section>
 </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
-    <script src="./js/validation.js"></script>
-    <script src="./js/app.js"></script>
+<script src="./node_modules/sal.js/dist/sal.js"></script>
+<script>
+    sal()
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+<script src="./js/validation.js"></script>
+<script src="./js/app.js"></script>
 </body>
 </html>
