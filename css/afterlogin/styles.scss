@@ -18,9 +18,6 @@ body {
     height: 936px;
     display:flex;
 }
-.image-section {
-
-}
 .header-image {
     height: 100%;
     width:220%;
@@ -188,8 +185,9 @@ display: block;
 
 .pick-item {
     width:100%;
-    height:600px;
+    height:883px;
     display:flex;
+    background-color: #f4f5f0;
 }
 
 .pickup-text {
@@ -320,12 +318,6 @@ h2 {
     cursor: pointer;
 }
 
-textarea {
-    margin-top: 25px;
-    width: 50%;
-    resize:none;
-}
-
 .inside-text {
     width:75%;
     border-bottom: 1px solid black;
@@ -346,7 +338,7 @@ h3 {
 }
 .adress-box, .date-box {
     width:300px;
-    height:300px;
+    height:450px;
 }
 
 .adress-box input, .date-box input {
@@ -355,37 +347,67 @@ h3 {
     border: 1px solid black;
 }
 
+textarea {
+    width: 90%;
+    height: 150px;
+    background-color: inherit;
+    resize: none;
+  }
 
-.street {
-
-}
-
-.postal {
-
-}
-
-.telephone {
-
-}
-
-.date {
-
-}
-
-.date-of-reception{
-
-}
-
-.time {
-
-}
-
+.street,
+.telephone,
+.postal,
+.date,
+.date-of-reception,
+.time,
 .courier-text {
+    margin-top: 20px;
+    width: 320px;
+} label {
+    padding: 20px 0 20px 0;
+} 
 
+
+.step1 .flex-btns {
+    margin-top: 15px;
+}
+
+.step5 .flex-btns {
+    margin-top: 150px !important;
+}
+
+//step6
+
+
+.bag-section, .hand-section {
+    display:flex;
+}
+
+.bag-section p, .hand-section p {
+    margin-left: 20px;
+    height:60px;
+    display: flex;
+    align-items: center;
+}
+.sec-img {
+    margin-top: 25px;
+    width:48px;
+    height:55px;
+}
+
+//step 7
+
+.thanks {
+    width:720px;
+    height:580px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 35px;
 }
 
 .footer{
-    margin-top: 175px;
     width:100%;
     height:970px;
     display:flex;
@@ -397,7 +419,7 @@ h3 {
 
 .image-footer > img {
     height:100%;
-    width:100%;
+    width:120%;
 }
 
 .form-section {
@@ -435,7 +457,7 @@ h3 {
     flex-direction: column;
     margin-top: 50px;
 } input {
-    width:200px;
+    width:250px;
     border: none;
     border-bottom: 1px solid black;
     background: transparent;
@@ -447,7 +469,7 @@ h3 {
     margin-top: 30px;
 }
 .message-form {
-    width:75%;
+    width:80%;
     border:none;
     border-bottom: 1px solid black;
     background: transparent;
@@ -463,6 +485,7 @@ h3 {
     height:50px;
     width: 100px;
 }
+
 .icons {
     display:flex;
     justify-content: space-evenly;
@@ -470,6 +493,7 @@ h3 {
     height:500px;
     padding-left: 50px;
 }
+
 .icons img {
     height:50px;
     width:50px;

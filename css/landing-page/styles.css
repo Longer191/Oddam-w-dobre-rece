@@ -1,5 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 .header-section {
-  width: 1500px;
+  width: 100%;
   height: 936px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,7 +24,7 @@
 
 .header-image {
   height: 100%;
-  width: 1012px;
+  width: 150%;
 }
 
 .text-section {
@@ -20,7 +36,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   height: 773px;
-  width: 826px;
+  width: 55%;
 }
 
 .nav-up {
@@ -308,7 +324,7 @@
 
 .people-section {
   margin-top: 100px;
-  width: 1900px;
+  width: 100%;
   height: 966px;
   background: #eeefef;
   display: -webkit-box;
@@ -371,18 +387,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1028px;
+  width: 90%;
   height: 965px;
 }
 
 .people-image-flex {
   margin-top: 50px;
-  width: 1028px;
+  width: 100%;
   height: 856px;
 }
 
 .help-section {
-  width: 1900px;
+  width: 100%;
   height: 1054px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -501,7 +517,7 @@
 }
 
 .footer {
-  width: 1900px;
+  width: 100%;
   height: 970px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,7 +531,7 @@
 
 .image-footer > img {
   height: 100%;
-  width: 1000px;
+  width: 120%;
 }
 
 .form-section {
@@ -593,7 +609,7 @@ input {
 }
 
 .message-form {
-  width: 100%;
+  width: 80%;
   border: none;
   border-bottom: 1px solid black;
   background: transparent;
@@ -629,16 +645,5 @@ input {
   height: 50px;
   width: 50px;
   border: 1px solid black;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
 }
 /*# sourceMappingURL=styles.css.map */

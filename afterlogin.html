@@ -77,15 +77,15 @@
             <p class='steps'>Krok 1/4</p>
             <h2 class = "instruct-to-change">Zaznacz co chcesz oddać: </h2>
             <form action="" class="pick-form">
-                <input type="checkbox" id="checkbox-1">
+                <input type="checkbox" id="checkbox-1" value = 'ubran, które nadają się do ponownego użycia'>
                 <label for="checkbox-1">ubrania, które nadają się do ponownego użycia</label>
-                <input type="checkbox" id="checkbox-2">
+                <input type="checkbox" id="checkbox-2" value = 'ubran do wyrzucenia'>
                 <label for="checkbox-2">ubrania do wyrzucenia</label>
-                <input type="checkbox" id="checkbox-3">
+                <input type="checkbox" id="checkbox-3" value = 'zabawek'>
                 <label for="checkbox-3">zabawki</label>
-                <input type="checkbox" id="checkbox-4">
+                <input type="checkbox" id="checkbox-4" value = 'ksiazek'>
                 <label for="checkbox-4">ksiązki</label>
-                <input type="checkbox" id="checkbox-5">
+                <input type="checkbox" id="checkbox-5" value = 'rzeczy'>
                 <label for="checkbox-5">inne</label>
             </form>
         </li>
@@ -96,10 +96,10 @@
                     <label>Liczba 60 l worków: </label>
                     <select class = 'numbers-bags'>
                             <option value="wybierz">-wybierz-</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
+                            <option id = 'numberBags1' class = 'numberBags' value="1">1</option>
+                            <option id = 'numberBags2' class = 'numberBags' value="2">2</option>
+                            <option id = 'numberBags3' class = 'numberBags' value="3">3</option>
+                            <option id = 'numberBags4' class = 'numberBags' value="4">4</option>
                         </select>
                 </form>
             </li>
@@ -133,7 +133,7 @@
                     <h2>Wybierz organizację której chcesz pomóc:</h2>
                 <div class="list-organisations">
                         <div class="inside-text">
-                                <input type="checkbox" id="checkbox-7">
+                                <input type="checkbox" id="checkbox-7" value = "Fundacji 'Bez Domu'">
                                 <label class = "inside-text-font" for="checkbox-7">Fundacja  “Bez domu” </label>
                                 <p class = "aim-org">Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania</p>
                         </div>
@@ -184,21 +184,76 @@
                                     <input type="date" name="date" id="date" value="">
                             </div>
                             <div class="time">
-                                    <label for="date">Godzina</label>
-                                    <input type="time" name="date" id="date" value="">
+                                    <label for="time">Godzina</label>
+                                    <input type="time" name="time" id="time" value="">
                             </div>
                             <div class="courier-text">
                                     <label for="date">Uwagi dla kuriera</label>
-                                    <textarea name="comment" id="comment" cols="30" rows="10" class = "comment" id="form_message"></textarea>
+                                    <textarea name="comment" id="comment" cols="30" rows="10" class = "comment"></textarea>
                             </div>
-                            
                         </div>
                     </div>
+                    </li>
+                    <li class="slide step6">
+                        <h2 class = "instruct-to-change">Podsumowanie twojej darowizny </h2>
+                        <h3>Oddajesz: </h3>
+                        <div class="bag-section">
+                            <img src="./images/shopping-bag-solid.svg" alt="" srcset="" class = "sec-img">
+                            <p id="num-of-given-bags"></p>
+                        </div>
+                        <div class="hand-section">
+                            <img src="./images/hand-holding-heart-solid.svg" alt="" srcset="" class = "sec-img">
+                            <p id="name-of-organisation"></p>
+                        </div>
+                        <div class="step5-content-flex">
+                        <div class="adress-box">
+                            <h3>Adres odbioru</h3>
+                            <div class="street">
+                                    <label for="street">Ulica</label>
+                                    <input type="text" name="street" id="streetOut" value="">
+                            </div>
+                            <div class="street">
+                                    <label for="city">Miasto</label>
+                                    <input type="text" name="city" id="cityOut" value="">
+                            </div>
+                            <div class="postal">
+                                    <label for="postal">Kod pocztowy</label>
+                                    <input type="number" name="postal" id="postalOut" value="">
+                            </div>
+                            <div class="telephone">
+                                    <label for="telephone">Numer telefonu</label>
+                                    <input type="tel" name="telephone" id="telephoneOut" value="">
+                            </div>
+                        </div>
+                        <div class="date-box">
+                            <h3>Termin odbioru</h3>
+                            <div class="date-of-reception">
+                                    <label for="date">Data</label>
+                                    <input type="date" name="date" id="dateOut" value="">
+                            </div>
+                            <div class="time">
+                                    <label for="time">Godzina</label>
+                                    <input type="time" name="time" id="timeOut" value="">
+                            </div>
+                            <div class="courier-text">
+                                    <label for="comment">Uwagi dla kuriera</label>
+                                    <textarea name="comment" id="commentOut" cols="30" rows="10" class = "commentOut" value = ""></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="slide step7">
+                        <div class="thanks">
+                            <p>Dziękujemy za przesłanie formularza</p>
+                            <p>Na maila prześlemy wszelkie</p>
+                            <p>informacje o odbiorze</p>
+                            <img src="./images/decoration.png" alt="" srcset="">
+                        </div>
                     </li>
         </ul>
         <div class="flex-btns">
                 <button class='prevBtn'>Wstecz</button>
-                <button class='nextBtn'>Dalej</button>
+                <button class='nextBtn' value = 'Dalej'>Dalej</button>
             </div>
         </div>
         <div class = 'bear-image'>

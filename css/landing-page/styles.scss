@@ -1,10 +1,3 @@
-@import 'header';
-@import 'yellow-section';
-@import 'steps';
-@import 'people-section';
-@import 'help-section';
-@import 'footer';
-
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +7,20 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+.content {
+    max-width: 1500px;
+    margin:0 auto;
+}
+
+@import 'header';
+@import 'yellow-section';
+@import 'steps';
+@import 'people-section';
+@import 'help-section';
+@import 'footer';
+
+
 
 
 

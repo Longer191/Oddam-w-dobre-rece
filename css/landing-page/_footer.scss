@@ -1,5 +1,5 @@
 .footer{
-    width:1900px;
+    width:100%;
     height:970px;
     display:flex;
     background: #eeefef;
@@ -10,7 +10,7 @@
 
 .image-footer > img {
     height:100%;
-    width:1000px;
+    width:120%;
 }
 
 .form-section {
@@ -60,7 +60,7 @@
     margin-top: 30px;
 }
 .message-form {
-    width:100%;
+    width:80%;
     border:none;
     border-bottom: 1px solid black;
     background: transparent;
