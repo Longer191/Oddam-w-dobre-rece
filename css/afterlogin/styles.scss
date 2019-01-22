@@ -56,23 +56,7 @@ body {
     background: transparent;
     cursor: pointer;
     color: inherit;
-
 }
-
-.rocket {
-    width: 25px;
-    height:25px;
-    margin-top: 10px;
-}
-.rocket:hover {
-    background: yellow;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-    border: 1px solid black;
-    text-align: center;
-}
-
 .dropdown-content {
 display: none;
 position: absolute;
@@ -156,11 +140,21 @@ display: block;
 .second-diamond,
 .third-diamond,
 .fourth-diamond {
-    width:150px;
-    height:150px;
+    width:130px;
+    height:130px;
     border:1px solid black;
     transform: rotate(45deg);
     margin-right: 30px;
+    position: relative;
+}
+
+.text-font{
+    font-size: 15px;
+    position: absolute;
+    text-align: center;
+    text-align:center;
+    margin-top: 10px;
+    margin-left: 25px;
 }
 
 .yellow-section {
@@ -488,16 +482,32 @@ textarea {
 
 .icons {
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-end;
     height:500px;
-    padding-left: 50px;
 }
 
-.icons img {
-    height:50px;
-    width:50px;
-    border: 1px solid black;
+.icon-btn {
+   width:90px;
+   height:90px;
+   background: #f1f1f1;
+   margin:10px;
+   border-radius: 30%;
+   box-shadow: 0 5px 15px -5px #00000070;
+   color:black;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+}
+
+.icon-btn i {
+    line-height: 90px;
+    font-size: 40px;
+    transition: 0.2s linear;
+}
+
+.icon-btn:hover i{
+    transform: scale(1.5);
 }
 
 

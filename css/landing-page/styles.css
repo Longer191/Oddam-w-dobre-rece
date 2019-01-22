@@ -37,10 +37,12 @@ body {
           flex-direction: column;
   height: 773px;
   width: 55%;
+  margin-left: 100px;
 }
 
 .nav-up {
   width: 637px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,12 +54,13 @@ body {
   text-decoration: none;
   padding-left: 30px;
   font-size: 15px;
+  margin-left: 50px;
 }
 
 .nav-up a {
   text-decoration: none;
   color: inherit;
-  padding: 10px;
+  padding: 15px;
 }
 
 .hover-rec:hover {
@@ -67,6 +70,7 @@ body {
 }
 
 .nav-down {
+  margin-left: 50px;
   margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,7 +227,6 @@ body {
 .hands .steps-text-right {
   word-wrap: break-word;
   padding-right: 25px;
-  margin-top: 10px;
 }
 
 .arrow {
@@ -247,7 +250,6 @@ body {
 .arrow .steps-text-right {
   word-wrap: break-word;
   padding-right: 25px;
-  margin-top: 10px;
 }
 
 .help {
@@ -271,7 +273,6 @@ body {
 .help .steps-text-right {
   word-wrap: break-word;
   padding-right: 25px;
-  margin-top: 10px;
 }
 
 .courier {
@@ -295,7 +296,6 @@ body {
 .courier .steps-text-right {
   word-wrap: break-word;
   padding-right: 25px;
-  margin-top: 10px;
 }
 
 .minus {
@@ -631,19 +631,38 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   height: 500px;
-  padding-left: 50px;
 }
 
-.icons img {
-  height: 50px;
-  width: 50px;
-  border: 1px solid black;
+.icon-btn {
+  width: 90px;
+  height: 90px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  -webkit-box-shadow: 0 5px 15px -5px #00000070;
+          box-shadow: 0 5px 15px -5px #00000070;
+  color: black;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.icon-btn i {
+  line-height: 90px;
+  font-size: 40px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.icon-btn:hover i {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 /*# sourceMappingURL=styles.css.map */
