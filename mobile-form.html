@@ -46,13 +46,17 @@
             <p>Zaznacz co chcesz oddać</p>
             <div class = 'info-section-flex'>
                 <i class="fas fa-info-circle"></i>
-                <p>Ważne!<br>
+                <p class = 'change change1'>Ważne!<br>
                     Uzupełnij szczegóły dotyczące Twoich rzeczy. Dzięki temu będziemy wiedzieć komu najlepiej je przekazać.</p>
+                <p class = 'change change2'>Wszystkie rzeczy do oddania zapakuj w 60 l worki. <br>Dokładną instrukcję jak poprawnie spakować rzeczy znajdziesz TUTAJ.</p>
+                <p class= 'change change3'>Jeśli wiesz komu chcesz pomóc, możesz wpisać nazwę tej organizacji w wyszukiwarce.<br>Możesz też filtrować organizacje po ich lokalizacji bądź celu ich pomocy.</p>
+                <p class= 'change change4'>Na podstawie Twoich kryteriów oraz rzeczy, które masz do oddania wybraliśmy organizacje, którym możesz pomóc.<br>Wybierz jedną, do której trafi Twoja przesyłka.</p>
+                <p class="change change5">Podaj adres oraz termin odbioru rzeczy.</p>
             </div>
         </section>
         <section class="pick-form">
-            <ul>
-                <li>
+            <ul class = "text-slider">
+                <li class = 'slide step1'>
                         <form action="" class="pick-form">
                                 <input type="checkbox" id="checkbox-1" value = 'ubran, które nadają się do ponownego użycia'>
                                 <label for="checkbox-1">ubrania, które nadają się do ponownego użycia</label>
@@ -74,7 +78,7 @@
                                             <label for="checkbox-1">Sezon jesień-zima</label>
                                             <input type="checkbox" id="checkbox-2" value = 'ubran do wyrzucenia'>
                                             <label for="checkbox-2">Sezon wiosna-lato</label>
-                                        
+
                                     </div>
                                 <input type="checkbox" id="checkbox-2" value = 'ubran do wyrzucenia'>
                                 <label for="checkbox-2">ubrania do wyrzucenia</label>
@@ -98,21 +102,107 @@
                                 <input type="checkbox" id="checkbox-5" value = 'rzeczy' >
                                 <label for="checkbox-5">inne</label>
                                 <div class = "for-who-books-inne" id = "hide" style = 'display:none'>
-    
                                     <p>Wypisz jakie</p>
                                     <textarea name="" id="textarea" cols="30" rows="10"></textarea>
-                                
                                 </div>
                             </form>
 
                             </form>
                 </li>
+                <li class = 'slide step2'>
+                    <p>Podaj liczbę 60l worków, w które spakowałeś/aś rzeczy:</p>
+                    <form action="">
+                            <label>Liczba 60 l worków: </label>
+                            <select class = 'numbers-bags'>
+                                    <option value="wybierz">-wybierz-</option>
+                                    <option id = 'numberBags1' class = 'numberBags' value="1">1</option>
+                                    <option id = 'numberBags2' class = 'numberBags' value="2">2</option>
+                                    <option id = 'numberBags3' class = 'numberBags' value="3">3</option>
+                                    <option id = 'numberBags4' class = 'numberBags' value="4">4</option>
+                                </select>
+                        </form>
+                </li>
+                <li class="slide step3">
+                        <h2>Lokalizacja:</h2>
+                        <form action="">
+                            <select name="cities" class = "citiesNumber">
+                                <option value="wybierz">-wybierz-</option>
+                                <option value="Warszawa">Warszawa</option>
+                                <option value="Kraków">Kraków</option>
+                                <option value="Wrocław">Wrocław</option>
+                                <option value="Gdańsk">Gdańsk</option>
+                            </select>
+                        </form>
+                        <p class = 'margin'>Komu chcesz pomagać?</p>
+                        <div class="three-options">
+                            <p>dzieciom</p>
+                            <p>samotnym matkom</p>
+                            <p>bezdomnym</p>
+                        </div>
+                        <div class="two-options">
+                            <p>niepełnosprawnym</p>
+                            <p>osobom starszym</p>
+                        </div>
+                        <p class = 'margin'>Wpisz nazwę konkretnej organizacji (opcjonalnie)</p>
+                        <textarea name="optional" id="" cols="30" rows="10"></textarea> 
+                </li>
+                <li class="slide step4">
+                    <div class="foundation-list">
+                        <div class="foundation">
+                            Fundacja A
+                        </div>
+                        <div class="foundation">
+                            Fundacja B
+                        </div>
+                        <div class="foundation">
+                                Fundacja C
+                            </div>
+                </div>
+                </li>
+                <li class="slide step5">
+                        <h4 class = "instruct-to-change">Podaj adres oraz termin odbioru rzeczy przez kuriera </h4>
+                        <div class="step5-content-flex">
+                        <div class="adress-box">
+                            <h3>Adres odbioru</h3>
+                            <div class="street">
+                                    <label for="street">Ulica</label>
+                                    <input type="text" name="street" id="street" value="">
+                            </div>
+                            <div class="street">
+                                    <label for="city">Miasto</label>
+                                    <input type="text" name="city" id="city" value="">
+                            </div>
+                            <div class="postal">
+                                    <label for="postal">Kod pocztowy</label>
+                                    <input type="number" name="postal" id="postal" value="">
+                            </div>
+                            <div class="telephone">
+                                    <label for="telephone">Numer telefonu</label>
+                                    <input type="tel" name="telephone" id="telephone" value="">
+                            </div>
+                        </div>
+                        <div class="date-box">
+                            <h3>Termin odbioru</h3>
+                            <div class="date-of-reception">
+                                    <label for="date">Data</label>
+                                    <input type="date" name="date" id="date" value="">
+                            </div>
+                            <div class="time">
+                                    <label for="time">Godzina</label>
+                                    <input type="time" name="time" id="time" value="">
+                            </div>
+                            <div class="courier-text">
+                                    <label for="date">Uwagi dla kuriera</label>
+                                    <textarea name="comment" id="comment" cols="30" rows="10" class = "comment"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </li>
             </ul>
             <div class="flex-btns">
                     <button class='prevBtn button'>Wstecz</button>
                     <button class='nextBtn button' value = 'Dalej'>Dalej</button>
-                </div>
-       
+                </div>   
         </section>
         <section class="fourth-section">
             <img src="./images/u5.png" alt="" srcset="">

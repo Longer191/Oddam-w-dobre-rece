@@ -316,7 +316,6 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: 1px solid black;
   width: 80%;
   font-size: 1rem;
 }
@@ -324,11 +323,5 @@ i {
 .for-who input,
 .for-who-books input {
   margin-left: 10px;
-}
-
-.textarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 /*# sourceMappingURL=styles.css.map */
