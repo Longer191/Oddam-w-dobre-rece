@@ -21,9 +21,9 @@
           justify-content: space-between;
 }
 
-.mobile-nav img {
-  width: 10%;
-  height: 25%;
+.logo {
+  width: 50%;
+  height: 100%;
   border-radius: 50%;
   background: white;
   margin-left: 15px;
@@ -106,7 +106,7 @@
 
 .third-section {
   width: 100%;
-  height: 100%;
+  height: 160%;
 }
 
 .third-section-flex {
@@ -136,6 +136,7 @@
   text-align: center;
   line-height: 90px;
   margin: 0 auto;
+  font-size: 1rem;
 }
 
 .third-section p:nth-child(2) {
@@ -146,5 +147,188 @@
   margin-top: 10px;
   text-align: center;
   font-size: 20px;
+}
+
+.third-section button {
+  background-color: #F7CB11;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 120px;
+  height: 60px;
+  border-radius: 10%;
+  border: none;
+  font-size: 20px;
+}
+
+.fourth-section {
+  background: #F7CB11;
+  margin-top: 20px;
+}
+
+.fourth-section img {
+  width: 10%;
+  height: 25%;
+  border-radius: 50%;
+  background: white;
+  margin-left: 15px;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+}
+
+.contact i {
+  margin-left: 10px;
+}
+
+.footer-info {
+  margin-top: 20px;
+}
+
+.login-page {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.login-page input {
+  margin-top: 30px;
+  width: 30%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 25px;
+  border-color: #F7CB11;
+  margin: 0 auto;
+}
+
+.login-buttons button {
+  margin-top: 20px;
+  border-radius: 10%;
+  width: 20%;
+  background-color: #F7CB11;
+}
+
+button a {
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 10px;
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.rec,
+.checkmark {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  background: #F7CB11;
+  text-align: center;
+  line-height: 50px;
+}
+
+.oddaj-rzeczy {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.info-section {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #F7CB11;
+  font-size: 1.4rem;
+}
+
+.info-section-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.8em;
+}
+
+i {
+  font-size: 2em;
+  margin: 0 20px 0 20px;
+}
+
+.pick-form {
+  height: 100%;
+  width: 100%;
+  background: white;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0 0 10px;
+}
+
+.hidden-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.for-who,
+.for-who-books {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid black;
+  width: 80%;
+  font-size: 1rem;
+}
+
+.for-who input,
+.for-who-books input {
+  margin-left: 10px;
+}
+
+.textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=styles.css.map */

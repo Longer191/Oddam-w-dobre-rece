@@ -1,4 +1,4 @@
-//logowanie do portalu
+//logowanie do portalu (desktop)
 const login = 'j_michal7@o2.pl'
 const password = 'lubieplacki'
 
@@ -12,6 +12,18 @@ loginBtn.addEventListener('click', (e) => {
     e.preventDefault();
     if (emailInput.value === login && passwordInput.value === password) {
         window.location.href = "afterlogin.html";
+    } else {
+        alert('Podane przez ciebie dane są nieprawidłowe.')
+    }
+})
+
+//logowanie do portalu (mobile)
+
+let loginMobile = document.querySelector('.login')
+loginMobile.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (emailInput.value === login && passwordInput.value === password) {
+        window.location.href = "afterlogin-mobile.html";
     } else {
         alert('Podane przez ciebie dane są nieprawidłowe.')
     }
