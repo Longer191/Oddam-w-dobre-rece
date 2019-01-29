@@ -20,7 +20,6 @@
             <div class="nav-up">
                 <div class="drop-flex">
                     <button class="dropbtn">Witaj Michał</button>
-                    <!-- <img src="./images/rocketchat-brands.svg" class = 'rocket' alt="" srcset=""> -->
                 </div>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="#">Profil</a>
@@ -84,16 +83,16 @@
             <li class="slide step1">
             <p class='steps'>Krok 1/4</p>
             <h2 class = "instruct-to-change">Zaznacz co chcesz oddać: </h2>
-            <form action="" class="pick-form">
-                <input type="checkbox" id="checkbox-1" value = 'ubran, które nadają się do ponownego użycia'>
+            <form action="" class="pick-form" name='myForm'>
+                <input type="checkbox" id="checkbox-1" value = 'ubran, które nadają się do ponownego użycia' name = 'coder'>
                 <label for="checkbox-1">ubrania, które nadają się do ponownego użycia</label>
-                <input type="checkbox" id="checkbox-2" value = 'ubran do wyrzucenia'>
+                <input type="checkbox" id="checkbox-2" value = 'ubran do wyrzucenia' name = 'coder'>
                 <label for="checkbox-2">ubrania do wyrzucenia</label>
-                <input type="checkbox" id="checkbox-3" value = 'zabawek'>
+                <input type="checkbox" id="checkbox-3" value = 'zabawek' name = 'coder'>
                 <label for="checkbox-3">zabawki</label>
-                <input type="checkbox" id="checkbox-4" value = 'ksiazek'>
+                <input type="checkbox" id="checkbox-4" value = 'ksiazek' name = 'coder'>
                 <label for="checkbox-4">ksiązki</label>
-                <input type="checkbox" id="checkbox-5" value = 'rzeczy'>
+                <input type="checkbox" id="checkbox-5" value = 'rzeczy' name = 'coder'>
                 <label for="checkbox-5">inne</label>
             </form>
         </li>
@@ -102,7 +101,7 @@
                 <h2>Podaj liczbę 60l worków, w które spakowałeś/aś rzeczy:</h2>
                 <form action="">
                     <label>Liczba 60 l worków: </label>
-                    <select class = 'numbers-bags'>
+                    <select class = 'numbers-bags' id='test'>
                             <option value="wybierz">-wybierz-</option>
                             <option id = 'numberBags1' class = 'numberBags' value="1">1</option>
                             <option id = 'numberBags2' class = 'numberBags' value="2">2</option>
@@ -117,21 +116,21 @@
                 <form action="">
                     <select name="cities" class = "citiesNumber">
                         <option value="wybierz">-wybierz-</option>
-                        <option value="Warszawa">Warszawa</option>
-                        <option value="Kraków">Kraków</option>
-                        <option value="Wrocław">Wrocław</option>
-                        <option value="Gdańsk">Gdańsk</option>
+                        <option value="z Warszawy">Warszawa</option>
+                        <option value="z Krakowa">Kraków</option>
+                        <option value="z Wrocławia">Wrocław</option>
+                        <option value="z Gdańska">Gdańsk</option>
                     </select>
                 </form>
                 <p class = 'margin'>Komu chcesz pomagać?</p>
                 <div class="three-options">
-                    <p>dzieciom</p>
-                    <p>samotnym matkom</p>
-                    <p>bezdomnym</p>
+                    <button class='options-btn' value = 'dzieciom' onclick="clickedButtonCheck(this);">dzieciom</button>
+                    <button class='options-btn' value = 'samotnym matkom' onclick="clickedButtonCheck(this);">samotnym matkom</button>
+                    <button class='options-btn' value = 'bezdomnym' onclick="clickedButtonCheck(this);">bezdomnym</button>
                 </div>
                 <div class="two-options">
-                    <p>niepełnosprawnym</p>
-                    <p>osobom starszym</p>
+                    <button class='options-btn' value = 'niepełnosprawnym' onclick="clickedButtonCheck(this);">niepełnosprawnym</button>
+                    <button class='options-btn' value = 'osobom starszym' onclick="clickedButtonCheck(this);">osobom starszym</button>
                 </div>
                 <p class = 'margin'>Wpisz nazwę konkretnej organizacji (opcjonalnie)</p>
                 <textarea name="optional" id="" cols="30" rows="10"></textarea>
@@ -261,7 +260,7 @@
         </ul>
         <div class="flex-btns">
                 <button class='prevBtn'>Wstecz</button>
-                <button class='nextBtn' value = 'Dalej'>Dalej</button>
+                <button class='nextBtn' value = 'Dalej' onclick="multiCheck();">Dalej</button>
             </div>
         </div>
         <div class = 'bear-image' data-sal-duration="1000" data-sal="slide-left" data-sal-easing="ease-out-bounce">

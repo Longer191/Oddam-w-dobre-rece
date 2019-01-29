@@ -299,17 +299,28 @@ h2 {
     margin-top: 20px;
     width:60%;
     display:flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
 }
-.three-options > p, .two-options > p {
+.options-btn {
     padding:15px;
     text-align: center;
+    margin-top: 30px;
+    width:50% !important;
+    border:none;
+    background-color: transparent;
+    padding:20px;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-left: 10%;
 }
 
-.three-options > p:hover, .two-options > p:hover {
+.options-btn:hover {
     border: 1px solid black;
     cursor: pointer;
+    background-color: #F7CB11;
+    border-color: #F7CB11;
+    color:white;
+    transition: .2s;
 }
 
 .inside-text {
