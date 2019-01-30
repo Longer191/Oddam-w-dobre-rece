@@ -65,5 +65,10 @@
     color:inherit;
 }
 .account a:hover {
-    border:2px solid black;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: #F7CB11;
+    border-color: #F7CB11;
+    color:white;
+    transition: .2s;
 }

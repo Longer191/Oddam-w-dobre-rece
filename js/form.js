@@ -124,29 +124,26 @@ function startSlide() {
     //values of selected options from the third slide
     let cityChoice = document.querySelector('.citiesNumber');
     let selectedCity = cityChoice.options[cityChoice.selectedIndex].value;
-    //for whom the items will be given (with jQuery)
-    const clickedButtonCheck = (e) => {
-      numBags.innerHTML = selectedNumberOfBags + ' worki ' + showData + e.value
+    //for whom the items will be given
+    let targetChoice = document.querySelectorAll('.options-btn');
+    for (let i = 0; i < targetChoice.length; i++) {
+      targetChoice[i].addEventListener('click', (e) => {
+        let targetChoiceValue = targetChoice[i].value;
+        numBags.innerHTML = selectedNumberOfBags + ' worki ' + showData + ' dla ' + targetChoiceValue;
+      })
     }
-    
-    clickedButtonCheck();
-
-    numBags.innerHTML = selectedNumberOfBags + ' worki ' + showData + ' dla dzieci'
-    nameOrg.innerHTML = 'Nazwa organizacji ' + selectedCity;
+    //name of the organisation
+    let resultOrg = '';
+    let orgLenght = document.querySelectorAll('input[name="org-name"]');
+    for (let i = 0; i < orgLenght.length; i++) {
+      let checkedOrg = orgLenght[i].checked;
+      if (checkedOrg) {
+        resultOrg += orgLenght[i].value;
+      }
+    }
+    let showOrg = resultOrg;
+    nameOrg.innerHTML = showOrg + selectedCity;
   }
 
   multiCheck()
 
-
-
-      
-//       let targetChoice = document.querySelectorAll('.options-btn');
-//       for (let i = 0; i < targetChoice.length; i++) {
-//         console.log(targetChoice[i].value);
-//       }
-//       $('.options-btn').click(() => {
-//         let clickedBtn = $(this.target).val();
-//         console.log(clickedBtn)  
-//       })
-
-  

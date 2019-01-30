@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Spectral', serif;
 }
 
 .content {
@@ -319,7 +319,13 @@ body {
 }
 
 .account a:hover {
-  border: 2px solid black;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: #F7CB11;
+  border-color: #F7CB11;
+  color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .people-section {

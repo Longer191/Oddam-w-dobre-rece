@@ -116,21 +116,21 @@
                 <form action="">
                     <select name="cities" class = "citiesNumber">
                         <option value="wybierz">-wybierz-</option>
-                        <option value="z Warszawy">Warszawa</option>
-                        <option value="z Krakowa">Kraków</option>
-                        <option value="z Wrocławia">Wrocław</option>
-                        <option value="z Gdańska">Gdańsk</option>
+                        <option value=" z Warszawy">Warszawa</option>
+                        <option value=" z Krakowa">Kraków</option>
+                        <option value=" z Wrocławia">Wrocław</option>
+                        <option value=" z Gdańska">Gdańsk</option>
                     </select>
                 </form>
                 <p class = 'margin'>Komu chcesz pomagać?</p>
                 <div class="three-options">
-                    <button class='options-btn' value = 'dzieciom' onclick="clickedButtonCheck(this);">dzieciom</button>
-                    <button class='options-btn' value = 'samotnym matkom' onclick="clickedButtonCheck(this);">samotnym matkom</button>
-                    <button class='options-btn' value = 'bezdomnym' onclick="clickedButtonCheck(this);">bezdomnym</button>
+                    <button class='options-btn' value = 'dzieci'>dzieciom</button>
+                    <button class='options-btn' value = 'samotnych matek'>samotnym matkom</button>
+                    <button class='options-btn' value = 'bezdomnych'>bezdomnym</button>
                 </div>
                 <div class="two-options">
-                    <button class='options-btn' value = 'niepełnosprawnym' onclick="clickedButtonCheck(this);">niepełnosprawnym</button>
-                    <button class='options-btn' value = 'osobom starszym' onclick="clickedButtonCheck(this);">osobom starszym</button>
+                    <button class='options-btn' value = 'niepełnosprawnych'>niepełnosprawnym</button>
+                    <button class='options-btn' value = 'osób starszych'>osobom starszym</button>
                 </div>
                 <p class = 'margin'>Wpisz nazwę konkretnej organizacji (opcjonalnie)</p>
                 <textarea name="optional" id="" cols="30" rows="10"></textarea>
@@ -140,22 +140,22 @@
                     <h2>Wybierz organizację której chcesz pomóc:</h2>
                 <div class="list-organisations">
                         <div class="inside-text">
-                                <input type="checkbox" id="checkbox-7" value = "Fundacji 'Bez Domu'">
+                                <input type="checkbox" id="checkbox-7" value = "Fundacji 'Bez Domu'" name = 'org-name'>
                                 <label class = "inside-text-font" for="checkbox-7">Fundacja  “Bez domu” </label>
                                 <p class = "aim-org">Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania</p>
                         </div>
                         <div class="inside-text">
-                                <input type="checkbox" id="checkbox-8">
+                                <input type="checkbox" id="checkbox-8" name = 'org-name' value = "Fundacji 'Dla Dzieci'">
                                 <label class = "inside-text-font" for="checkbox-8">Fundacja  “Dla dzieci”</label>
                                 <p class = "aim-org">Cel i misja: Pomoc zieciom z ubogich rodzin.</p>
                             </div>
                             <div class="inside-text">
-                                    <input type="checkbox" id="checkbox-9">
+                                    <input type="checkbox" id="checkbox-9" name = 'org-name' value = "Organizacji 'Zdrowie jest istotne'">
                                     <label class = "inside-text-font" for="checkbox-9">Organizacja  “Zdrowie jest istotne”</label>
                                     <p class = "aim-org">Cel i misja: Pomoc osobom w kultywowaniu zdrowego trybu życia.</p>
                                 </div>
                                 <div class="inside-text">
-                                        <input type="checkbox" id="checkbox-10">
+                                        <input type="checkbox" id="checkbox-10" name = 'org-name' value = "Zbiórki dla dzieci z domów dziecka">
                                         <label class = "inside-text-font" for="checkbox-10">Zbióra dla dzieci z domów dziecka</label>
                                         <p class = "aim-org">Cel i misja: Pomoc dzieciom z domów dziecka poprzez dostarczenie produktów codziennego użycia.</p>
                                     </div>
