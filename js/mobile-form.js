@@ -16,9 +16,9 @@
     sliderText = document.querySelectorAll('.change')
     prevBtn = document.querySelector('.prevBtn'),
     nextBtn = document.querySelector('.nextBtn'),
+    stepsBtn = document.querySelectorAll('.rec'),
     current = 0;
-    console.log(sliderImages)
-
+    console.log(stepsBtn)
     function reset() {
       for (let i = 0; i < sliderImages.length; i++) {
           sliderImages[i].style.display = "none";
@@ -26,32 +26,61 @@
       for (let i = 0; i < sliderText.length; i++){
         sliderText[i].style.display = 'none'
       }
+      for (let i = 0; i < stepsBtn.length; i++){
+      }
   }
   
   function startSlide() {
       reset();
       sliderImages[0].style.display = "block";
       sliderText[0].style.display = "block";
+      stepsBtn[0].style.backgroundColor = "#008080";
+      stepsBtn[0].style.color = "white";
+
     }
   
     function slideLeft() {
       reset();
       sliderImages[current - 1].style.display = "block";
       sliderText[current - 1].style.display = "block";
+      // stepsBtn[current - 1].style.backgroundColor = "#F7CB11";
+      // stepsBtn[current - 1].style.color = "black";
+      stepsBtn[current].style.color = "black";
+      stepsBtn[current].style.backgroundColor = "#F7CB11";
+      
+
       current--;
+      if (current === 0) {
+        console.log(current)
+        
+  
+        stepsBtn[0].style.backgroundColor = "#008080";
+        stepsBtn[0].style.color = "white";
+      }
+
     }
   
     function slideRight() {
       reset();
       sliderImages[current + 1].style.display = "block";
       sliderText[current + 1].style.display = "block";
+      stepsBtn[current + 1].style.backgroundColor = "#008080";
+      stepsBtn[current + 1].style.color = "white";
       current++;
+      // if (current === 0) {
+      //   console.log(current)
+  
+      //   stepsBtn[0].style.backgroundColor = "#008080";
+      //   stepsBtn[0].style.color = "white";
+      // }
+
     }
   
     prevBtn.addEventListener("click", function() {
       if (current === 0) {
         current = sliderImages.length;
         current = sliderText.length;
+        current = stepsBtn.length;
       }
       slideLeft();
     });
@@ -63,9 +92,14 @@
       if (current === sliderText.length - 1) {
         current = -1;
       }
+      if (current === stepsBtn.length - 1) {
+        current = -1;
+      }
       slideRight();
     });
     startSlide();
+
+    
 
     //getting value of inputs
 let counter = 0;
@@ -105,6 +139,7 @@ function getVal() {
     dateOut.value = date.value;
     timeOut.value = time.value;
     commentOut.value = comment.value;
+    console.log(counter)
     console.log(nextBtn)
     if (counter == 5) {
       document.querySelector('.nextBtn').innerText = "Potwierdzam";
@@ -112,6 +147,13 @@ function getVal() {
     } else if (counter == 6) {
       document.querySelector('.nextBtn').style.display = "none";
       document.querySelector('.prevBtn').style.display = "none";
+    }
+  })
+  prevBtn.addEventListener('click', () => {
+    counter--
+    if (counter < 5) {
+      document.querySelector('.nextBtn').innerText = "Dalej";
+
     }
   })
 }
