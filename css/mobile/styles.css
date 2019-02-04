@@ -288,7 +288,7 @@ i {
   height: 100%;
   width: 100%;
   background: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,5 +323,78 @@ i {
 .for-who input,
 .for-who-books input {
   margin-left: 10px;
+}
+
+.step3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkboxes-for-whom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1em;
+}
+
+.foundation {
+  margin: 5%;
+}
+
+.step5-content-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.step5-content-flex textarea {
+  width: 80%;
+  height: 40%;
+}
+
+.adress-box,
+.date-box {
+  width: 40%;
+}
+
+.street,
+.telephone,
+.postal,
+.date,
+.date-of-reception,
+.time,
+.courier-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10%;
+}
+
+.street,
+.telephone,
+.postal,
+.date,
+.date-of-reception,
+.time,
+.courier-text input {
+  width: 80%;
+}
+
+.step6 img {
+  width: 5%;
+  height: 5%;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -52,6 +52,8 @@
                 <p class= 'change change3'>Jeśli wiesz komu chcesz pomóc, możesz wpisać nazwę tej organizacji w wyszukiwarce.<br>Możesz też filtrować organizacje po ich lokalizacji bądź celu ich pomocy.</p>
                 <p class= 'change change4'>Na podstawie Twoich kryteriów oraz rzeczy, które masz do oddania wybraliśmy organizacje, którym możesz pomóc.<br>Wybierz jedną, do której trafi Twoja przesyłka.</p>
                 <p class="change change5">Podaj adres oraz termin odbioru rzeczy.</p>
+                <p class="change change6">Podsumowanie twojej darowizny.</p>
+
             </div>
         </section>
         <section class="pick-form">
@@ -134,14 +136,18 @@
                             </select>
                         </form>
                         <p class = 'margin'>Komu chcesz pomagać?</p>
-                        <div class="three-options">
-                            <p>dzieciom</p>
-                            <p>samotnym matkom</p>
-                            <p>bezdomnym</p>
-                        </div>
-                        <div class="two-options">
-                            <p>niepełnosprawnym</p>
-                            <p>osobom starszym</p>
+                        <!-- checkboxes for whom sectiom -->
+                        <div class='checkboxes-for-whom'>
+                            <input type="checkbox" value="dziecom" id='checkbox-children'>
+                            <label for="checkbox-childer">dzieciom</label>
+                            <input type="checkbox" value="samotnym matkom" id='checkbox-mother'>
+                            <label for="checkbox-mother">samotnym matkom</label>
+                            <input type="checkbox" value="bezdomnym" id='checkbox-homeless'>
+                            <label for="checkb0x-homeless">bezdomnym</label>
+                            <input type="checkbox" value="niepełnosprawnym" id='checkbox-disabled'>
+                            <label for="checkb0x-disabled">niepełnosprawnym</label>
+                            <input type="checkbox" value="osobom starszym" id='checkbox-old'>
+                            <label for="checkbox-old">osobom starszym</label>
                         </div>
                         <p class = 'margin'>Wpisz nazwę konkretnej organizacji (opcjonalnie)</p>
                         <textarea name="optional" id="" cols="30" rows="10"></textarea> 
@@ -198,6 +204,102 @@
                         </div>
                     </div>
                 </li>
+                <li class="slide step6">
+                        <h2 class = "instruct-to-change">Podsumowanie twojej darowizny </h2>
+                        <h3>Oddajesz: </h3>
+                        <div class="bag-section">
+                            <img src="./images/shopping-bag-solid.svg" alt="" srcset="" class = "sec-img">
+                            <p id="num-of-given-bags"></p>
+                        </div>
+                        <div class="hand-section">
+                            <img src="./images/hand-holding-heart-solid.svg" alt="" srcset="" class = "sec-img">
+                            <p id="name-of-organisation"></p>
+                        </div>
+                        <div class="step5-content-flex">
+                        <div class="adress-box">
+                            <h3>Adres odbioru</h3>
+                            <div class="street">
+                                    <label for="street">Ulica</label>
+                                    <input type="text" name="street" id="streetOut" value="">
+                            </div>
+                            <div class="street">
+                                    <label for="city">Miasto</label>
+                                    <input type="text" name="city" id="cityOut" value="">
+                            </div>
+                            <div class="postal">
+                                    <label for="postal">Kod pocztowy</label>
+                                    <input type="number" name="postal" id="postalOut" value="">
+                            </div>
+                            <div class="telephone">
+                                    <label for="telephone">Numer telefonu</label>
+                                    <input type="tel" name="telephone" id="telephoneOut" value="">
+                            </div>
+                        </div>
+                        <div class="date-box">
+                            <h3>Termin odbioru</h3>
+                            <div class="date-of-reception">
+                                    <label for="date">Data</label>
+                                    <input type="date" name="date" id="dateOut" value="">
+                            </div>
+                            <div class="time">
+                                    <label for="time">Godzina</label>
+                                    <input type="time" name="time" id="timeOut" value="">
+                            </div>
+                            <div class="courier-text">
+                                    <label for="comment">Uwagi dla kuriera</label>
+                                    <textarea name="comment" id="commentOut" cols="30" rows="10" class = "commentOut" value = ""></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="slide step6">
+                        <h2 class = "instruct-to-change">Podsumowanie twojej darowizny </h2>
+                        <h3>Oddajesz: </h3>
+                        <div class="bag-section">
+                            <!-- <img src="./images/shopping-bag-solid.svg" alt="" srcset="" class = "sec-img"> -->
+                            <p id="num-of-given-bags"></p>
+                        </div>
+                        <div class="hand-section">
+                            <!-- <img src="./images/hand-holding-heart-solid.svg" alt="" srcset="" class = "sec-img"> -->
+                            <p id="name-of-organisation"></p>
+                        </div>
+                        <div class="step5-content-flex">
+                        <div class="adress-box">
+                            <h3>Adres odbioru</h3>
+                            <div class="street">
+                                    <label for="street">Ulica</label>
+                                    <input type="text" name="street" id="streetOut" value="">
+                            </div>
+                            <div class="street">
+                                    <label for="city">Miasto</label>
+                                    <input type="text" name="city" id="cityOut" value="">
+                            </div>
+                            <div class="postal">
+                                    <label for="postal">Kod pocztowy</label>
+                                    <input type="number" name="postal" id="postalOut" value="">
+                            </div>
+                            <div class="telephone">
+                                    <label for="telephone">Numer telefonu</label>
+                                    <input type="tel" name="telephone" id="telephoneOut" value="">
+                            </div>
+                        </div>
+                        <div class="date-box">
+                            <h3>Termin odbioru</h3>
+                            <div class="date-of-reception">
+                                    <label for="date">Data</label>
+                                    <input type="date" name="date" id="dateOut" value="">
+                            </div>
+                            <div class="time">
+                                    <label for="time">Godzina</label>
+                                    <input type="time" name="time" id="timeOut" value="">
+                            </div>
+                            <div class="courier-text">
+                                    <label for="comment">Uwagi dla kuriera</label>
+                                    <textarea name="comment" id="commentOut" cols="30" rows="10" class = "commentOut" value = ""></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
             </ul>
             <div class="flex-btns">
                     <button class='prevBtn button'>Wstecz</button>

@@ -238,7 +238,7 @@ button a {
     height:100%;
     width:100%;
     background:white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     display:flex;
     flex-direction: column;
     margin: 10px 0 0 10px;
@@ -262,4 +262,60 @@ button a {
 .for-who-books input {
     margin-left: 10px;
 }
+.step3{
+    display:flex;
+}
+.checkboxes-for-whom{
+    display:flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+.foundation {
+    margin:5%;
+}
+.step5-content-flex {
+    display:flex;
+    flex-direction: column;
+}
+
+.step5-content-flex textarea{
+    width:80%;
+    height:40%;
+}
+
+.adress-box,
+.date-box {
+    width:40%;
+}
+
+.street,
+.telephone,
+.postal,
+.date,
+.date-of-reception,
+.time,
+.courier-text {
+   display:flex;
+   flex-direction: column;
+   margin-bottom: 10%;
+} .street,
+.telephone,
+.postal,
+.date,
+.date-of-reception,
+.time,
+.courier-text input {
+    width:80%;
+}
+
+.step6 img {
+    width:5%;
+    height:5%;
+}
+
+
+
+
+
 
