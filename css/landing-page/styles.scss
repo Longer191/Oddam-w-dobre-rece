@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Spectral', serif;
+    overflow-x: hidden;
 }
 
 .content {
@@ -19,7 +20,7 @@ body {
 @import 'people-section';
 @import 'help-section';
 @import 'footer';
-
+@import 'media-query'
 
 
 
