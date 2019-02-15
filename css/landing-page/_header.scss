@@ -31,12 +31,6 @@
     color:inherit;
     padding:15px;
 }
-
-.hover-rec:hover {
-    border: 1px solid black;
-    list-style-type: none;
-    text-align: center;
-}
 .nav-down {
     margin-left: 10px;
     margin-top: 40px;
@@ -52,6 +46,12 @@
     text-decoration: none;
     color:inherit;
     padding:10px;
+}
+.nav-down-list a:hover,
+.nav-up a:hover {
+    zoom: 120%;
+    background: #F7CB11;
+    color:white;
 }
 .middle-text {
     width:100%;
@@ -78,6 +78,8 @@
 
 .middle-text-a:hover {
     color:white;
-    background: #F7CB11;
+    background: #f7cb11;
     border:none;
+    transition-duration: 0.1s;
+    border-radius: 25px;
 }

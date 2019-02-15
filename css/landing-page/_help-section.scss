@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 820px;
+    width: 80%;
     height:140px;
     margin: 0 auto;
     font-size: 18px;
@@ -24,16 +24,18 @@
 
 .three-texts p {
         text-align: center;
-        padding: 25px;
+        padding: 5px;
 }
 
 .three-texts p:hover {
     border:1px solid black;
     transition: 1s;
+    zoom:120%;
+    cursor: pointer;
 }
 
 .long-text{
-    width: 620px;
+    width: 70%;
     height: 130px;
     margin: 0 auto;
     font-size: 22px;
@@ -48,15 +50,15 @@
     display:none;
 }
 .container{
-    width:1317px;
+    width:80%;
     margin: 0 auto;
     display:flex;
     justify-content: space-between;
     margin-top: 100px;
 }
 .left-side{
-    width:550px;
-    height: 400px;
+    width:50%;
+    height: 50%;
 }
 .inside-text{
     font-size: 16px;
@@ -68,24 +70,10 @@
     font-size: 26px;
 }
 .right-side {
-    width:513px;
+    width:30%;
     height: 400px;
 }
 .display-none {
     font-size: 26px;
     visibility: hidden;
-}
-.numbers {
-    display:flex;
-    margin: 0 auto;
-    font-size: 18px;
-    width:200px;
-}
-
-.number>p{
-    width:40px;
-    height:40px
-}
-.numbers p:hover {
-    border:1px solid black;
 }

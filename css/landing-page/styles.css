@@ -64,12 +64,6 @@ body {
   padding: 15px;
 }
 
-.hover-rec:hover {
-  border: 1px solid black;
-  list-style-type: none;
-  text-align: center;
-}
-
 .nav-down {
   margin-left: 10px;
   margin-top: 40px;
@@ -94,6 +88,13 @@ body {
   text-decoration: none;
   color: inherit;
   padding: 10px;
+}
+
+.nav-down-list a:hover,
+.nav-up a:hover {
+  zoom: 120%;
+  background: #F7CB11;
+  color: white;
 }
 
 .middle-text {
@@ -135,8 +136,11 @@ body {
 
 .middle-text-a:hover {
   color: white;
-  background: #F7CB11;
+  background: #f7cb11;
   border: none;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  border-radius: 25px;
 }
 
 .yellow-section {
@@ -330,8 +334,9 @@ body {
   background-color: #F7CB11;
   border-color: #F7CB11;
   color: white;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: .1s;
+  transition: .1s;
+  border-radius: 25px;
 }
 
 .people-section {
@@ -438,7 +443,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 820px;
+  width: 80%;
   height: 140px;
   margin: 0 auto;
   font-size: 18px;
@@ -447,17 +452,19 @@ body {
 
 .three-texts p {
   text-align: center;
-  padding: 25px;
+  padding: 5px;
 }
 
 .three-texts p:hover {
   border: 1px solid black;
   -webkit-transition: 1s;
   transition: 1s;
+  zoom: 120%;
+  cursor: pointer;
 }
 
 .long-text {
-  width: 620px;
+  width: 70%;
   height: 130px;
   margin: 0 auto;
   font-size: 22px;
@@ -473,7 +480,7 @@ body {
 }
 
 .container {
-  width: 1317px;
+  width: 80%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,8 +492,8 @@ body {
 }
 
 .left-side {
-  width: 550px;
-  height: 400px;
+  width: 50%;
+  height: 50%;
 }
 
 .inside-text {
@@ -501,31 +508,13 @@ body {
 }
 
 .right-side {
-  width: 513px;
+  width: 30%;
   height: 400px;
 }
 
 .display-none {
   font-size: 26px;
   visibility: hidden;
-}
-
-.numbers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  font-size: 18px;
-  width: 200px;
-}
-
-.number > p {
-  width: 40px;
-  height: 40px;
-}
-
-.numbers p:hover {
-  border: 1px solid black;
 }
 
 .footer {
@@ -555,7 +544,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  width: 800px;
+  width: 53%;
 }
 
 .form-section img {
@@ -678,13 +667,14 @@ input {
           transform: scale(1.5);
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 900px) {
   .header-section {
     width: 1500px;
   }
   .header-image,
   .people-image-flex,
-  .image-footer {
+  .image-footer,
+  .image-footer > img {
     display: none;
   }
   .text-section {
@@ -753,6 +743,18 @@ input {
   }
   .about-us-long-text {
     font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 845px) {
+  .right-side {
+    display: none;
+  }
+  .left-side {
+    width: 100%;
+  }
+  .form-section {
+    width: 250%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
