@@ -11,7 +11,7 @@
     .navbar {
         visibility: hidden;
     }
-
+ 
     .text-section {
         display:flex; 
         justify-content: flex-end;
@@ -56,6 +56,15 @@
     }
     .about-us-long-text {
         font-size: 20px;
+    }
+    .form-section {
+        margin-left: 20%;
+    }
+    .footer {
+        background: url('../../images/contact.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        resize: both;
     }
 }
 

@@ -662,10 +662,16 @@ input {
 
 .send-button {
   margin: 0 auto;
+  background: inherit;
   margin-top: 50px;
   border: 1px solid black;
   height: 50px;
   width: 100px;
+}
+
+.send-button:hover {
+  cursor: pointer;
+  zoom: 110%;
 }
 
 .icons {
@@ -786,6 +792,15 @@ input {
   }
   .about-us-long-text {
     font-size: 20px;
+  }
+  .form-section {
+    margin-left: 20%;
+  }
+  .footer {
+    background: url("../../images/contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    resize: both;
   }
 }
 
