@@ -36,19 +36,19 @@
     text-transform: uppercase;
     margin-top: 75px;
     text-align: left;
-    margin-left: 5px;
+    margin: 0 auto;
 }
 .form {
     display: flex;
     flex-direction: column;
-    width:650px;
+    width:100%;
 }
 .name-email {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
 } input {
-    width:250px;
+    width:50%;
     border: none;
     border-bottom: 1px solid black;
     background: transparent;

@@ -105,6 +105,36 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+//burger
+// $( document ).ready(function() {
+
+//     $( ".cross" ).hide();
+//     $( ".menu" ).hide();
+//     $( ".hamburger" ).click(function() {
+//     $( ".menu" ).slideToggle( "slow", function() {
+//     $( ".hamburger" ).hide();
+//     $( ".cross" ).show();
+//     });
+//     });
+    
+//     $( ".cross" ).click(function() {
+//     $( ".menu" ).slideToggle( "slow", function() {
+//     $( ".cross" ).hide();
+//     $( ".hamburger" ).show();
+//     });
+//     });
+    
+//     });
+let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+
+  mainNav.classList.toggle('active')
+});
+
+
+
 
 
 

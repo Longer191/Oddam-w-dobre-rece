@@ -38,7 +38,6 @@ body {
           flex-direction: column;
   height: 773px;
   width: 55%;
-  margin-left: 100px;
 }
 
 .nav-up {
@@ -141,6 +140,47 @@ body {
   -webkit-transition-duration: 0.1s;
           transition-duration: 0.1s;
   border-radius: 25px;
+}
+
+.navbar {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+  width: 30%;
+  float: right;
+  margin-right: 10%;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-nav li a:hover {
+  zoom: 130%;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 25px;
+  visibility: hidden;
+}
+
+.active {
+  display: block;
 }
 
 .yellow-section {
@@ -570,7 +610,7 @@ body {
   text-transform: uppercase;
   margin-top: 75px;
   text-align: left;
-  margin-left: 5px;
+  margin: 0 auto;
 }
 
 .form {
@@ -581,7 +621,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 650px;
+  width: 100%;
 }
 
 .name-email {
@@ -596,7 +636,7 @@ body {
 }
 
 input {
-  width: 250px;
+  width: 50%;
   border: none;
   border-bottom: 1px solid black;
   background: transparent;
@@ -667,7 +707,7 @@ input {
           transform: scale(1.5);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
   .header-section {
     width: 1500px;
   }
@@ -676,6 +716,9 @@ input {
   .image-footer,
   .image-footer > img {
     display: none;
+  }
+  .navbar {
+    visibility: hidden;
   }
   .text-section {
     display: -webkit-box;
@@ -747,14 +790,51 @@ input {
 }
 
 @media only screen and (max-width: 845px) {
-  .right-side {
+  .right-side,
+  .down-text,
+  .decoration {
     display: none;
+  }
+  .down-text {
+    width: 100%;
+  }
+  .text-section {
+    height: 100%;
+    background: url("../../images/pencils.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .left-side {
     width: 100%;
   }
   .form-section {
     width: 250%;
+  }
+  .about-us-section {
+    height: 200px;
+  }
+  .nav-up,
+  .nav-down {
+    display: none;
+  }
+  .middle-text {
+    margin-bottom: 50%;
+    color: white;
+  }
+  .navbar-toggle,
+  .navbar {
+    height: 100%;
+    visibility: visible;
+    color: white;
+  }
+  .form-section {
+    margin-left: 10%;
+  }
+  .footer {
+    background: url("../../images/contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    resize: both;
   }
 }
 /*# sourceMappingURL=styles.css.map */
